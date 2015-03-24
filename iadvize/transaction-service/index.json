@@ -1,0 +1,13 @@
+{
+  "exchanges": [{
+    "name": "iAdvize-transaction-service",
+    "type": "topic"
+  }],
+  "queues": [{
+    "name": "transaction-service",
+    "bind": [{
+      "exchange": "iAdvize",
+      "bindingKey": "#.transaction-service"
+    }]
+  }]
+}

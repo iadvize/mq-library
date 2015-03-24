@@ -1,0 +1,20 @@
+{
+  "iadvize": {
+    "exchanges": [{
+      "name": "iAdvize",
+      "type": "topic"
+    }],
+    "services": {
+      "transaction-service": {
+        "exchanges": [{
+          "name": "transaction-service",
+          "type": "topic",
+          "queues": [{
+            "name": "transaction-service",
+            "bindingKey": "#.sdfsfd"
+          }]
+        }]
+      }
+    }
+  }
+}
