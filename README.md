@@ -1,5 +1,9 @@
 # Work In Progress \#LiveTeam
 
+## Objectif
+
+Se concentrer sur le métier et ne pas avoir à gérer ni le transport ni la topologie du transport.
+
 ## Usage
 
 ```javascript
