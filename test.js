@@ -1,11 +1,4 @@
-# MQ-library
-
-
-## How to use
-
-Define a configuration
-```javascript
-
+'use strict';
 var amqpConfig = {
   connection: {
     host: 'rabbitmq',
@@ -24,15 +17,22 @@ var amqpConfig = {
     {name: 'domain.notifs.queue', messageTtl: 60000}
   ],
   bindings: [
-    {exchange: 'domain.events', target: 'domain.events.queue', keys: ['some.routing.key.*']},
+    {exchange: 'domain.events', target: 'domain.events.queue', keys: ['some.routing.key.*', 'someotherkey']},
     {exchange: 'domain.notifs', target: 'domain.notifs.queue'}
   ]
 };
 
-var mq = require('mq-library')(amqpConfig, logger);
+var logger = {
+  error: function () {
+    console.log.apply(this, arguments);
+  }
+};
+
+var mq = require('./lib')(amqpConfig, logger);
 
 mq.then(function (channel) {
-  channel.consume('domain.events.queue', someFancyFunction);
-  channel.consume('domain.notifs.queue', someOtherFancyFunction);
+  channel.consume('domain.events.queue', function (message) {
+    console.log(message);
+  });
 });
-```
+
