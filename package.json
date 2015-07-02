@@ -1,6 +1,6 @@
 {
   "name": "mq-library",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "An easy to use library to work with Message Queuing",
   "main": "lib/index.js",
   "scripts": {
@@ -17,14 +17,17 @@
     "queue",
     "node"
   ],
-  "contributors": [{
-    "name": "Francois-Guillaume Ribreau",
-    "email": "npm@fgribreau.com",
-    "url": "http://fgribreau.com/"
-  }, {
-    "name": "Simon Paitrault",
-    "email": "contact@freyskeyd.fr"
-  }],
+  "contributors": [
+    {
+      "name": "Francois-Guillaume Ribreau",
+      "email": "npm@fgribreau.com",
+      "url": "http://fgribreau.com/"
+    },
+    {
+      "name": "Simon Paitrault",
+      "email": "contact@freyskeyd.fr"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/iadvize/mq-library/issues"
