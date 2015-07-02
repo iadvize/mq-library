@@ -12,6 +12,7 @@
   },
   "keywords": [
     "amqp",
+    "queuing",
     "rabbitmq",
     "queue",
     "node"
