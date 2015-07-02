@@ -1,5 +1,10 @@
-# MQ-library
+# MQ-library - Message Queuing Library
 
+## Setup
+
+```bash
+npm install mq-library --save
+```
 
 ## How to use
 
