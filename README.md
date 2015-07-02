@@ -41,3 +41,5 @@ mq.then(function (channel) {
   channel.consume('domain.notifs.queue', someOtherFancyFunction);
 });
 ```
+
+# [Changelog](/CHANGELOG.md)
