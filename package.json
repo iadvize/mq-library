@@ -2,7 +2,7 @@
   "name": "mq-library",
   "version": "0.0.1",
   "description": "An easy to use library to work with Message Queuing",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "mocha lib/**/*.test.js"
   },
@@ -16,8 +16,15 @@
     "queue",
     "node"
   ],
-  "author": "iAdvize",
-  "license": "ISC",
+  "contributors": [{
+    "name": "Francois-Guillaume Ribreau",
+    "email": "npm@fgribreau.com",
+    "url": "http://fgribreau.com/"
+  }, {
+    "name": "Simon Paitrault",
+    "email": "contact@freyskeyd.fr"
+  }],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/iadvize/mq-library/issues"
   },
@@ -29,6 +36,6 @@
     "when": "^3.7.3"
   },
   "devDependencies": {
-    "check-build": "^1.6.1"
+    "check-build": "*"
   }
 }
