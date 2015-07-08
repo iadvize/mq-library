@@ -43,3 +43,11 @@ mq.then(function (channel) {
 ```
 
 # [Changelog](/CHANGELOG.md)
+
+
+# How to publish a new version
+
+```bash
+npm install npm-release -g
+npm-release [major|minor|patch]
+```
