@@ -45,9 +45,17 @@ mq.then(function (channel) {
 # [Changelog](/CHANGELOG.md)
 
 
-# How to publish a new version
+## How to publish a new version
 
 ```bash
 npm install npm-release -g
 npm-release [major|minor|patch]
 ```
+
+npm-release is a little script to help release npm modules. It:
+
+- Bumps the version in package.json
+- Commits 'Release x.x.x'
+- Tags
+- Pushes to upstream
+- Publish on npm (if `private:true` is not present in package.json)
