@@ -8,7 +8,7 @@ npm install mq-library --save
 
 ## How to use
 
-Define a configuration
+Define a simple configuration
 ```javascript
 
 var amqpConfig = {
@@ -35,6 +35,22 @@ var amqpConfig = {
 };
 
 var mq = require('mq-library')(amqpConfig, logger);
+
+mq.then(function (channel) {
+  channel.consume('domain.events.queue', someFancyFunction);
+  channel.consume('domain.notifs.queue', someOtherFancyFunction);
+});
+```
+
+Define a configuration with an amqp message validator
+```javascript
+
+var amqpConfig = {...};
+
+// See doc here : https://www.npmjs.com/package/enjoi
+var amqpSchema = {...};
+
+var mq = require('mq-library')(amqpConfig, logger, amqpSchema);
 
 mq.then(function (channel) {
   channel.consume('domain.events.queue', someFancyFunction);
