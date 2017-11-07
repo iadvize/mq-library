@@ -17,7 +17,8 @@ var amqpConfig = {
     port: 5672,
     vhost: '/',
     user: 'guest',
-    pass: 'guest'
+    pass: 'guest',
+    useConfirms: false
   },
   exchanges: [
     {name: 'domain.events', type: 'topic', durable: true},
