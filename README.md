@@ -1,12 +1,8 @@
-# MQ-library - Message Queuing Library
+# mq-library
 
-## Setup
+Wrapper around amqplib to Manage easily rabbitmq connections and binding declarations.
 
-```bash
-npm install mq-library --save
-```
-
-## How to use
+## Examples
 
 Define a configuration
 ```javascript
@@ -43,10 +39,15 @@ mq.then(function (channel) {
 });
 ```
 
-# [Changelog](/CHANGELOG.md)
+## Install
 
+```bash
+npm install mq-library --save
+```
 
-## How to publish a new version
+## Documentation
+
+### How to publish a new version
 
 ```bash
 npm install npm-release -g
@@ -60,3 +61,7 @@ npm-release is a little script to help release npm modules. It:
 - Tags
 - Pushes to upstream
 - Publish on npm (if `private:true` is not present in package.json)
+
+## Contribute
+
+Look at contribution guidelines here : [](CONTRIBUTING.md)
