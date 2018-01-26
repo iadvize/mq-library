@@ -1,10 +1,9 @@
-# mq-library
+# mq-library [![npm version](https://badge.fury.io/js/mq-library.svg)](https://badge.fury.io/js/mq-library)
 
 Wrapper around amqplib to Manage easily rabbitmq connections and binding declarations.
 
 ## Examples
 
-Define a configuration
 ```javascript
 
 var amqpConfig = {
