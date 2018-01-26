@@ -64,4 +64,4 @@ npm-release is a little script to help release npm modules. It:
 
 ## Contribute
 
-Look at contribution guidelines here : [](CONTRIBUTING.md)
+Look at contribution guidelines here : [CONTRIBUTING.md](CONTRIBUTING.md)
