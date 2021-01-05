@@ -1,6 +1,6 @@
 {
   "name": "mq-library",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An easy to use library to work with Message Queuing",
   "main": "lib/index.js",
   "scripts": {
