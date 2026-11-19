@@ -7,7 +7,10 @@
     "lib"
   ],
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test",
+    "lint:ci": "jshint lib test",
+    "test:ci": "mocha test",
+    "build:ci": "npm pack --dry-run"
   },
   "repository": {
     "type": "git",
@@ -42,6 +45,7 @@
     "when": "^3.7.3"
   },
   "devDependencies": {
+    "jshint": "^2.13.6",
     "mocha": "^12.0.3"
   }
 }
