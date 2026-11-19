@@ -1,14 +1,17 @@
 {
-  "name": "mq-library",
-  "version": "0.1.2",
+  "name": "@iadvize/mq-library",
+  "version": "1.0.0",
   "description": "An easy to use library to work with Message Queuing",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "mocha test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iadvize/mq-library.git"
+    "url": "git+https://github.com/iadvize/mq-library.git"
   },
   "keywords": [
     "amqp",
