@@ -4,7 +4,7 @@
   "description": "An easy to use library to work with Message Queuing",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha lib/**/*.test.js"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -36,10 +36,9 @@
   "dependencies": {
     "amqplib": "^0.3.2",
     "assert": "^1.3.0",
-    "lodash": "^3.10.0",
     "when": "^3.7.3"
   },
   "devDependencies": {
-    "check-build": "*"
+    "mocha": "^12.0.3"
   }
 }
