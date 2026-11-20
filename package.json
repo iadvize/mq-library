@@ -1,14 +1,20 @@
 {
-  "name": "mq-library",
-  "version": "0.1.2",
+  "name": "@iadvize/mq-library",
+  "version": "1.0.0",
   "description": "An easy to use library to work with Message Queuing",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "test": "mocha lib/**/*.test.js"
+    "test": "mocha test",
+    "lint:ci": "jshint lib test",
+    "test:ci": "mocha test",
+    "build:ci": "npm pack --dry-run"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iadvize/mq-library.git"
+    "url": "git+https://github.com/iadvize/mq-library.git"
   },
   "keywords": [
     "amqp",
@@ -36,10 +42,10 @@
   "dependencies": {
     "amqplib": "^0.3.2",
     "assert": "^1.3.0",
-    "lodash": "^3.10.0",
     "when": "^3.7.3"
   },
   "devDependencies": {
-    "check-build": "*"
+    "jshint": "^2.13.6",
+    "mocha": "^12.0.3"
   }
 }

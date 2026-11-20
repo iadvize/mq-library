@@ -1,0 +1,35 @@
+version: 2.1
+
+orbs:
+  ci-cd: iadvize/ci-cd@volatile
+
+context: &context
+  context: org-global
+
+workflows:
+  build:
+    jobs:
+      - ci-cd/node_lib:
+          context:
+            - org-global
+            - org-lib
+          executor:
+            name: ci-cd/node
+            node_version: "26.13"
+          filters:
+            branches:
+              ignore: &default-branch master
+            tags:
+              only: /.*/
+  release:
+    jobs:
+      - ci-cd/check_pr_labels:
+          <<: *context
+          filters:
+            branches:
+              ignore: *default-branch
+      - ci-cd/create_release:
+          <<: *context
+          filters:
+            branches:
+              only: *default-branch
